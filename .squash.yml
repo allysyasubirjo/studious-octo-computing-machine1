@@ -158,33 +158,3 @@ deployments:
       80:3000 
     auto_deploy_on_commits:
       true
-
-  bmamMyApp:
-    filename:
-      ./Dockerfile
-    context_path:
-      ./
-    port_forwarding:
-      80:3000 
-    auto_deploy_on_commits:
-      true
-
-  nmamMyApp:
-    filename:
-      ./Dockerfile
-    context_path:
-      ./
-    port_forwarding:
-      80:3000 
-    auto_deploy_on_commits:
-      true
-
-  mmamMyApp:
-    filename:
-      ./Dockerfile
-    context_path:
-      ./
-    port_forwarding:
-      80:3000 
-    auto_deploy_on_commits:
-      true
